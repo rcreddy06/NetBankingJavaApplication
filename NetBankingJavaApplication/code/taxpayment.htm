@@ -1,0 +1,27 @@
+ <html>
+<%@ page import="java.sql.*,java.util.*"%>
+<body id=body>
+<SCRIPT Language="JavaScript" Purpose="Dom" Runat="Browser" SRC="validate.js"></SCRIPT>
+<SCRIPT Language="VBScript" Purpose="Dom" Runat="Browser" SRC="warn.vbs"></SCRIPT>
+<SCRIPT Language="JavaScript">onload=function() {
+elementEffect();
+document.getElementById('grad').style.cssText="padding:10px;filter:alpha(style=2,startX=100,startY=0);background:green;color:aliceblue;font-family:tahoma;font-size:30px;height:50px";
+document.getElementById('body').style.cssText="margin:0px;background:floralwhite";}
+</script>
+<Table width=100% cellspacing=0 cellpadding=0><TR><Td id=grad valign=top align=center>Online Net Banking Solutions For Life Time</td></tr></table>
+<fieldset>
+<legend align=center><font face=tahoma>Tax Payments</legend><BR>
+<table style="border:1px solid gray" align="center" id=register width=500 cellspacing=0 cellpadding=2><form action="taxpmt.jsp" method=post onsubmit="return validate(this)">   
+	 <tr><td align=right>Tax Pay Code</td><td> <input type="text" name="taxpaycode" value="" /> </td></tr>
+     <tr><td align=right>Origin Account No</td><td> <input type="text" name="oriacctnum" value="" /> </td></tr>
+	 <tr><td align=right>Tax Payer ID</td><td> <input type="text" name="taxpid" value="" /> </td></tr>
+	 <tr><td align=right>Tax Pay Date</td><td> <input type="text" name="taxpaydt" value="" />*dd-mmm-yyyy </td></tr>
+     <tr><td align=right>Tax From</td><td> <input type="text" name="taxfrom" value="" /> *dd-mmm-yyyy</td></tr>
+	 <tr><td align=right>Tax To</td><td> <input type="text" name="taxto" value="" /> *dd-mmm-yyyy</td></tr>  
+	 <tr><td align=right>Income</td><td> <input type="text" name="income" value="" /> </td></tr>  
+	 <tr><td align=right>Tax Amount</td><td> <input type="text" name="taxamt" value="" /> </td></tr>
+	 <tr><td align=right>Tax Authority</td><td> <input type="text" name="taxauth" value="" /> </td></tr>
+<tr bgcolor=mistyrose><td colspan=2 align=center><button type="submit"><u>S</u>ubmit</button>&nbsp;&nbsp;<button type=reset><u>R</u>eset</button></td></tr>
+</form></table><br><script>setColor();</script>
+</body>
+</html>
